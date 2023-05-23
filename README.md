@@ -1,10 +1,93 @@
-# Getting Started with Create React App
+# Getting Started with Full Stack Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project repository only contains the react code , the backend code is here [Backend](https://github.com/sjatin050/FullStack_SpringReact_Backend/tree/main).
 
-## Available Scripts
+## About the Project 
 
-In the project directory, you can run:
+This is a Full Stack Project , Used Spring Boot for Backend and React.js for Frontend , and used 2 types of Databases to display the data.
+</br>
+--> Used MySql Database for storing Details of client which is Accessing the site . [ Used JWT authentication ]
+</br>
+--> Used MongoDb for storing details of customers which is accessed by Client . 
+</br>
+--> A user has Either of the 2 access i.e. ADMIN or USER .
+</br>
+  --> A ADMIN can register new user and can edit details of customer whereas a USER can only see details of Customer.
+
+## Demonstrating The Site flow
+
+### I. When a ADMIN logs into the Site 
+
+#### 1. Enter the Details of the ADMIN
+![Login page](https://github.com/jatinpaytm/FullStack_Project_SpringReact/assets/123053672/4a6692fa-0ec6-4809-8565-94f6961e5ce0)
+</br>
+
+#### 2. After Logging in you are directed to Search Panel 
+if Credentials are wrong then Autentication Failed Error is Displayed
+![Search Panel](https://github.com/jatinpaytm/FullStack_Project_SpringReact/assets/123053672/72748f84-e29c-470c-869b-b2085f0cd1c4)
+In this pannel there are 4 choices , select one of them and also input the corresponding ID into it.
+</br>
+
+#### 3. Result Page is displayed after Search Panel
+Corresponding to the details in Search Panel , Customers Details are displayed.
+![Results Page](https://github.com/jatinpaytm/FullStack_Project_SpringReact/assets/123053672/7e783b13-d42c-49ed-a25d-b868e0a1b089)
+There is "Click here" button , choose the customer you want to see the details.
+</br>
+
+#### 4. Customer Details page is displayed after Results Page
+All details of the customer are diplayed on this page .
+![Customer Details page](https://github.com/jatinpaytm/FullStack_Project_SpringReact/assets/123053672/28acc512-881e-4348-a008-e96f4a46ec93)
+As the User is ADMIN , then he can edit the details , There is a "Update Email" button .
+</br>
+
+#### 5. Update Email page is displayed if UPDATE EMAIL button is pressed
+After hitting the "update email" button on Customer details page , Update page is Opened.
+![Update page](https://github.com/jatinpaytm/FullStack_Project_SpringReact/assets/123053672/b80ffd65-8582-42dd-9c86-af9ea65318bb)
+After Updating the email , hit the "SAVE" button , 
+</br>
+
+#### 6. After Hitting SAVE button , Results Page is displayed 
+When you hit "Save" button , result page is displayed with only that customer , with its updated Email Id .
+![After Update Page](https://github.com/jatinpaytm/FullStack_Project_SpringReact/assets/123053672/3cd042ff-b18d-4685-96e4-b851bc030a6b)
+To register new Member Hit the Register Button on top right Corner.
+</br>
+
+#### 7. ADMIN can register a new member 
+Admin has the priviledge to register new member , and can also provide him Role of Either ADMIN or USER.
+![Register Page](https://github.com/jatinpaytm/FullStack_Project_SpringReact/assets/123053672/4401223b-7977-445d-a4fc-83be5a5ebe09)
+</br>
+</br>
+
+### II. When a USER logs into the Site 
+
+#### 1. Enter the Details of the USER
+if Credentials are wrong then Autentication Failed Error is Displayed
+![Login page](https://github.com/jatinpaytm/FullStack_Project_SpringReact/assets/123053672/dbd05870-1a54-45a8-918b-a542672ea7c5)
+If Credentials are correct , it is directed to Search Panel
+</br>
+
+#### 2. After Logging in you are directed to Search Panel 
+![Customer Search page](https://github.com/jatinpaytm/FullStack_Project_SpringReact/assets/123053672/15ad9d52-e6b2-4017-b880-35d7baa5a842)
+
+In this pannel there are 4 choices , select one of them and also input the corresponding ID into it.
+</br>
+
+#### 3. Result Page is displayed after Search Panel
+Corresponding to the details in Search Panel , Customers Details are displayed.
+![Customer results page](https://github.com/jatinpaytm/FullStack_Project_SpringReact/assets/123053672/564df45b-cbab-4254-a18b-9d81fb6755cc)
+There is "Click here" button , choose the customer you want to see the details.
+</br>
+
+#### 4. Customer Details page is displayed after Results Page
+All details of the customer are diplayed on this page .
+![customer details display page](https://github.com/jatinpaytm/FullStack_Project_SpringReact/assets/123053672/0cbef4e3-8578-4a24-9bc0-8c5eed4c6c84)
+
+If want to search Other customer , hit "Home" on top and if the work is Done , hit "LogOut" on Top right.
+
+</br>
+</br>
+
+## To start the project in Local server , Follow the Below Commands
 
 ### `npm start`
 
