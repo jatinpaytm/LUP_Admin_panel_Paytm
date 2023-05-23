@@ -1,6 +1,6 @@
 # Getting Started with Full Stack Application
 
-This project repository only contains the react code , the backend code is here [Backend](https://github.com/sjatin050/FullStack_SpringReact_Backend/tree/main).
+This project repository only contains the react code , the backend code is here [Backend](https://github.com/jatinpaytm/FullStack_Backend_Paytm).
 
 ## About the Project 
 
