@@ -8,7 +8,7 @@ import {Formik, Form, Field, ErrorMessage} from 'formik'
 export default function UpdateComponent(){
 
     const {_id} = useParams()
-    console.log(_id)
+    //console.log(_id)
 
     const[email, setEmail] = useState('')
 
@@ -25,8 +25,8 @@ export default function UpdateComponent(){
         
             retrieveRootById(_id)
             .then(response => {
-                console.log(response)
-                console.log(response.data[0].email)
+                //console.log(response)
+                //console.log(response.data[0].email)
                 setEmail(response.data[0].email)
                 // setTargetDate(response.data.targetDate)
         
@@ -56,7 +56,7 @@ export default function UpdateComponent(){
         if(!values.email || !values.email.endsWith("@paytm.com")){
             errors.email = "Enter a Valid Paytm Email Id"
         }
-        console.log(errors);
+        //console.log(errors);
         return errors;
     }
 

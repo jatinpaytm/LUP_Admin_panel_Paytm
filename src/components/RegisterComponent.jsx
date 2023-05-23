@@ -14,7 +14,7 @@ export default function RegisterComponent(){
         executeJwtRegisterService(values.firstName,values.lastName,values.email,values.password,values.role)
         .then((response) => {
             
-            console.log(response)
+            //console.log(response)
             if(response.data.register === false){
                 
                 navigate(`/login`)

@@ -24,7 +24,7 @@ export default function AuthProvider({ children }) {
         const savedEmail = localStorage.getItem('email');
         const savedRole = localStorage.getItem('role');
 
-        console.log(savedToken)
+        //console.log(savedToken)
     
         if (savedToken && savedEmail && savedRole) {
           setToken(savedToken);
@@ -41,7 +41,7 @@ export default function AuthProvider({ children }) {
     //async function login(username, password) {
         try{
             const response = (await executeJwtAuthenticationService(email,password))
-            console.log("below is response")
+            //console.log("below is response")
             console.log(response);
             //const response = await executeJwtAuthenticationService(username,password)
             if(response.status===200){
@@ -54,7 +54,7 @@ export default function AuthProvider({ children }) {
                 localStorage.setItem('email', email);
                 localStorage.setItem('role', response.data.role);
                 
-                console.log("JWT Tokens")
+                //console.log("JWT Tokens")
                 setToken(jwtToken)
                 setAuthenticated(true)
                 setRole(response.data.role)

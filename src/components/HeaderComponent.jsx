@@ -10,8 +10,8 @@ export default function HeaderComponent() {
     const nameUrl = window.location.href
     
     // const {register}= useParams()
-    console.log(nameUrl);
-    console.log(nameUrl.endsWith("register"));
+    //console.log(nameUrl);
+    //console.log(nameUrl.endsWith("register"));
 
     const isAuthenticated = authContext.isAuthenticated
 
@@ -21,7 +21,7 @@ export default function HeaderComponent() {
          authContext.logout()
     }
 
-    console.log(authContext)
+    //console.log(authContext)
     //console.log(authContext.number);
 
     return (

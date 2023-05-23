@@ -6,7 +6,7 @@ import {useAuth} from './AuthContext';
 export default function Root(){
     const location = useLocation()
     var {root} =  location.state
-    console.log(root)
+    //console.log(root)
 
     // const [roots, setRoots] = useState(null)
     // setRoots(root)
@@ -42,7 +42,7 @@ export default function Root(){
     
 
     function updateEmailUsingId(_id) {
-      console.log('clicked ' + _id)
+      //console.log('clicked ' + _id)
       localStorage.removeItem('root');
       navigate(`/update/${_id}`)
     
